@@ -1,0 +1,1 @@
+This bug occurs when using the Expo `Camera` API with custom camera controls.  The problem arises when trying to access the camera's internal state (e.g., `isRecording`, `isTakingPhoto`) after a component using the `Camera` has unmounted. This leads to a `TypeError: Cannot read properties of undefined (reading 'isRecording')` or similar error.
